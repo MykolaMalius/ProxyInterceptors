@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1518096533441" stop="1518096587015" version="1.4.23" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : BrowserMobProxy</name>
+    <title>Default Suite : BrowserMobProxy</title>
+    <test-cases>
+        <test-case start="1518096533875" stop="1518096586719" status="passed">
+            <name>checkNetworkStatus</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Nazar"/>
+                <label name="thread" value="5852@Nazar.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
