@@ -50,13 +50,12 @@ public class DownloadCheckerTest {
         caps.setCapability(CapabilityType.PROXY, proxyServer.seleniumProxy());
         System.setProperty("webdriver.chrome.driver", "chromedriverv2.35.exe");
         WebDriver driver = new ChromeDriver(caps);
-        driver.manage().window().maximize();
-        /*http://www.winzip.com/win/en/downwz.html*/
+        driver.manage().window().maximize();    
         driver.get("http://10.10.0.77:8080");
         /*Download our file*/
-        //driver.findElement(By.xpath("//a[@class='button os-windows']")).click();
+        driver.findElement(By.xpath("//a[@class='button os-windows']")).click();
         String fileName = driver.findElement(By.tagName("body")).getText();
-        //assertTrue(new File(fileName).exists());
+        assertTrue(new File(fileName).exists());
 
         Har har = proxyServer.getHar();
         har.writeTo(new File("//results//Download.har"));
